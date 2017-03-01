@@ -8,10 +8,9 @@ class List::Node//only the list class can see the Node class
 
 };
 
-void List::insert(int num, int k)//insert num at k-th position of list
+void List::insert(int num, int k) //insert num at k-th position of list
 {
     Node* newPtr = new Node{num};
-
     Node* iPtr = frontPtr;
 
     if (k == 1)
@@ -20,12 +19,11 @@ void List::insert(int num, int k)//insert num at k-th position of list
 	    frontPtr = newPtr;
 	    return;
     }
-	     
-    for(int i = 1; i < k -1; i++)
-	    iPtr = iPtr->link;
-
-    newPtr = iPtr->link;
-    iPtr->link = newPtr->link;
-
-
+    
+	for(int i = 1; i < k -1; i++)
+		iPtr = iPtr->link;
+			
+	newPtr = iPtr->link;
+	iPtr->link = newPtr->link;
 }
+

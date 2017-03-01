@@ -11,6 +11,5 @@ int main()
 	L.insert(5,1);
 	L.insert(8,1);
 	L.insert(7,3);//problem here??
-
 }
 

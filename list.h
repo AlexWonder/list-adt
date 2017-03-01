@@ -9,11 +9,14 @@ class List
 	    class Node;  
 	    
 	    Node* frontPtr = nullptr;
+	    int num_elms = 0;
 
     public:
+	  
       void insert(int num, int k);
+      
+      //more functions
 
-      //more functions...
 };
 
 #endif
